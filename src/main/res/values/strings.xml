@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Audiobooks</string>
+
+    <string name="description_title">Description</string>
+    <string name="action_title">When you click on:</string>
+
+    <string name="activity_user_books_title">User\'s (Audio)Books</string>
+    <string name="activity_user_books_description">User interface: At the top of the screen you can see a "Now Playing" section where you can see control buttons (Play/Pause) and the title of the currently playing/last played audiobook.\n\nBellow this section there is a list of audiobooks that you can click on. Clicking on the Now Playing audiobook title or on a list item will open a new screen with the book details.\n\nAt the bottom there is a button labeled "Discover Books". It will bring the user to a new screen where they can look for other audiobooks.\n\nPlan for creation: The Now Playing section uses a class that you can use to play audiobooks. You can get the currently playing/last played audiobook from there. Its name can be AudiobookPlayer.java. The list of the user\'s audiobooks will be stored on the device. When you select an audiobook, the audiobook\'s data will be passed to the BookDetailsActivity by intent data.</string>
+    <string name="activity_user_books_button_now_playing_title">The book\'s title in Now Playing</string>
+    <string name="activity_user_books_button_list_item">A list item in the book list</string>
+    <string name="activity_user_books_button_discover">The discover button</string>
+
+    <string name="activity_discover_books_title">Discover (Audio)Books</string>
+    <string name="activity_discover_books_description">User interface: At the top of the screen you can see a search form where you can specify what kind of audiobooks do you want to search. If you ended in this activity from the BookDetailsActivity\'s Find similar button, then it is autofilled by information for you with things from the previous audiobook details (e.g. Type, Author or something that makes sense).\n\nBellow this search form, you can see a button with the label SEARCH. When you hit the button the results will be shown under the button. If no search was done before, a helper text tells the user that they should type the search text and hit the SEARCH button.\n\nIf you click on a list item, a new screen will be opened with the details of the audiobook.\n\nPlan for creation:The list of the result will be downloaded from the internet. I do not know which free audiobook webpage is good for this.</string>
+    <string name="activity_discover_books_button_list_item">A list item in the book list</string>
+
+    <string name="activity_book_details_title">(Audio)Book Details</string>
+    <string name="activity_book_details_description">User interface: At the top of the screen there are a lots of information about the book e.g. title, authors, reader, release year, length, category, description, etc.\n\nAfter this section you can see views which indicate if you have already added to your library. If not, then you can see an add to the library button. If yes, then you can see a remove from the library and Play/Pause buttons (depending on whether it is played in the background). By pressing the "Play" control, the audiobook will start and the user will be directed to the User\'s book list activity.\n\nAt the end of the screen you can see a "Find similar" labeled button that opens the DiscoverBookActivity with the additional search terms.\n\nPlan for creation: We display the data from the intent data. When we press the add to the User\'s library, we add it to the local storage. When we press the play button, we download the book from the internet and start to play it via the AudioPlayer class.</string>
+    <string name="activity_book_details_button_play">Play Audiobook</string>
+    <string name="activity_book_details_button_discover_similar_books">Discover similar books button</string>
+
+    <string name="activity_payment">Discover Payments (Audio)Books</string>
+    <string name="activity_payment_details_title"> Use the Google Pay API to request any credit or debit card stored in your customers Google account.</string>
+    <string name="activity_payment_details_description">The Google Pay API for Passes is a simple platform that lets you connect your business to millions of Android users by showcasing your loyalty programs, gift cards, and offers, boarding passes, and event tickets. You can engage with your customers anytime through location-based notifications, real-time updates, and messaging. Plus, its easy to manage updates at scale through the cloud.</string>
+
+</resources>
